@@ -1,12 +1,12 @@
 @media screen and (max-width: 650px) {
     .hero {
-        background-image: url("../public/images/heros/hero-image.jpg");
+        background-image: url("/images/hero-image-small.jpg");
     }
 }
 
 @media screen and (min-width: 651px) {
     .hero {
-        background-image: url("../public/images/heros/hero-image.jpg");
+        background-image: url("/images/hero-image-small.jpg");
     }
 }
 
@@ -83,4 +83,3 @@
         grid-template-columns: repeat(5, 1fr);
     }
 }
-
