@@ -107,7 +107,7 @@ body {
 	height: 500px;
 	max-width: 100%;
 	text-align: center;
-	background-image: url("../public/images/heros/hero-image.jpg");
+	background-image: url("/images/hero-image-large.jpg");
 	background-position: center;
 	position: relative;
 }
