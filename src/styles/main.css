@@ -246,7 +246,7 @@ main {
 }
 
 .restaurant .restaurant__info h4 {
-	width: 400px;
+	width: 100%;
 	margin: 8px 0;
 }
 
