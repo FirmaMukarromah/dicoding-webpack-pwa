@@ -5,12 +5,9 @@ const common = require('./webpack.common');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = merge(common, {
-  mode: 'development',
+  mode: "development",
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname, "dist"),
   },
-  module: {
-    plugins: [
-      new BundleAnalyzerPlugin(),
-    ],
+  plugins: [new BundleAnalyzerPlugin()],
 });
