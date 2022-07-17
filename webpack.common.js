@@ -6,6 +6,7 @@ const ServiceWorkerPlugin = require('serviceworker-webpack-plugin');
 const path = require('path');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
+const BrotliPlugin = require('brotli-webpack-plugin');
 
 module.exports = {
   performance: {
@@ -83,6 +84,12 @@ module.exports = {
           progressive: true,
         }),
       ],
+    }),
+    new BrotliPlugin({
+      asset: '[path].br[query]',
+      test: /\.(js|css|html|svg)$/,
+      threshold: 1024,
+      minRatio: 0.8
     }),
   ],
 };
